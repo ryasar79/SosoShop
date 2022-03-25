@@ -8,14 +8,14 @@ namespace SOSOSHOP.Business.Mappings.AutoMapper
     {
         public BusinessProfile()
         {
-            CreateMap<Entity.Concrete.Customer, GetAllCustomerQueryResponse>().ReverseMap();
-            CreateMap<Entity.Concrete.Customer, GetCustomerByIdQueryResponse>().ReverseMap();
+            CreateMap<Entity.Concrete.Customer, GetAllOrderQueryResponse>().ReverseMap();
+            CreateMap<Entity.Concrete.Customer, GetOrderByIdQueryResponse>().ReverseMap();
 
-            CreateMap<Entity.Concrete.Customer, CreateCustomerRequest>().ReverseMap();
-            CreateMap<Entity.Concrete.Customer, CreateCustomerResponse>().ReverseMap();
+            CreateMap<Entity.Concrete.Customer, CreateOrderRequest>().ReverseMap();
+            CreateMap<Entity.Concrete.Customer, CreateOrderResponse>().ReverseMap();
 
-            CreateMap<Entity.Concrete.Customer, UpdateCustomerRequest>().ReverseMap();
-            CreateMap<Entity.Concrete.Customer, UpdateCustomerResponse>().ReverseMap();
+            CreateMap<Entity.Concrete.Customer, UpdateOrderRequest>().ReverseMap();
+            CreateMap<Entity.Concrete.Customer, UpdateOrderResponse>().ReverseMap();
         }
     }
 }

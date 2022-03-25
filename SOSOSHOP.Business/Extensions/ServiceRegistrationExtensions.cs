@@ -16,8 +16,8 @@
 
         public static void RegisterValidators(this IServiceCollection services)
         {
-            services.AddSingleton<IValidator<CreateCustomerRequest>, CreateCustomerRequestValidator>();
-            services.AddSingleton<IValidator<UpdateCustomerRequest>, UpdateCustomerRequestValidator>();
+            services.AddSingleton<IValidator<CreateOrderRequest>, CreateOrderRequestValidator>();
+            services.AddSingleton<IValidator<UpdateOrderRequest>, UpdateOrderRequestValidator>();
         }
     }
 }
