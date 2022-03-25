@@ -25,4 +25,8 @@
     <ProjectReference Include="..\SOSOSHOP.Entity\SOSOSHOP.Entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>

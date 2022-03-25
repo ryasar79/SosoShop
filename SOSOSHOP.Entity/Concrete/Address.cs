@@ -1,7 +1,7 @@
-﻿namespace SOSOShop.Entity.Concrete
+﻿namespace SOSOSHOP.Entity.Concrete
 {
     using SOSOSHOP.Core.Entity;
-    using SOSOShop.Entity.Abstract;
+    using SOSOSHOP.Entity.Abstract;
 
     public class Address : BaseEntity, IEntity
     {

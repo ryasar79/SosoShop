@@ -1,6 +1,6 @@
-﻿namespace SOSOShop.Entity.Concrete
+﻿namespace SOSOSHOP.Entity.Concrete
 {
-    using SOSOShop.Entity.Abstract;
+    using SOSOSHOP.Entity.Abstract;
 	using SOSOSHOP.Core.Entity;
     public class Product : BaseEntity, IEntity
     {

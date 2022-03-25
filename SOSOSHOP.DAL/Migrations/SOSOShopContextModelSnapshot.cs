@@ -10,8 +10,8 @@ using SOSOSHOP.DAL.Concrete.EntityFramework.Context;
 
 namespace SOSOSHOP.DAL.Migrations
 {
-    [DbContext(typeof(SOSOShopContext))]
-    partial class SOSOShopContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(SOSOSHOPContext))]
+    partial class SOSOSHOPContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -22,7 +22,7 @@ namespace SOSOSHOP.DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("SOSOShop.Entity.Concrete.Address", b =>
+            modelBuilder.Entity("SOSOSHOP.Entity.Concrete.Address", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -48,7 +48,7 @@ namespace SOSOSHOP.DAL.Migrations
                     b.ToTable("Address");
                 });
 
-            modelBuilder.Entity("SOSOShop.Entity.Concrete.Customer", b =>
+            modelBuilder.Entity("SOSOSHOP.Entity.Concrete.Customer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -57,7 +57,7 @@ namespace SOSOSHOP.DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("created_at")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("email_address")
                         .IsRequired()
@@ -80,7 +80,7 @@ namespace SOSOSHOP.DAL.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("SOSOShop.Entity.Concrete.OrderItem", b =>
+            modelBuilder.Entity("SOSOSHOP.Entity.Concrete.OrderItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -105,7 +105,7 @@ namespace SOSOSHOP.DAL.Migrations
                     b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("SOSOShop.Entity.Concrete.OrderStatusCode", b =>
+            modelBuilder.Entity("SOSOSHOP.Entity.Concrete.OrderStatusCode", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -126,7 +126,7 @@ namespace SOSOSHOP.DAL.Migrations
                     b.ToTable("OrderStatusCodes");
                 });
 
-            modelBuilder.Entity("SOSOShop.Entity.Concrete.Product", b =>
+            modelBuilder.Entity("SOSOSHOP.Entity.Concrete.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -157,7 +157,7 @@ namespace SOSOSHOP.DAL.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("SOSOShop.Entity.Concrete.ProductCategory", b =>
+            modelBuilder.Entity("SOSOSHOP.Entity.Concrete.ProductCategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -182,16 +182,16 @@ namespace SOSOSHOP.DAL.Migrations
                     b.ToTable("ProductCategorys");
                 });
 
-            modelBuilder.Entity("SOSOShop.Entity.Concrete.Address", b =>
+            modelBuilder.Entity("SOSOSHOP.Entity.Concrete.Address", b =>
                 {
-                    b.HasOne("SOSOShop.Entity.Concrete.Customer", null)
+                    b.HasOne("SOSOSHOP.Entity.Concrete.Customer", null)
                         .WithMany("Addresses")
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SOSOShop.Entity.Concrete.Customer", b =>
+            modelBuilder.Entity("SOSOSHOP.Entity.Concrete.Customer", b =>
                 {
                     b.Navigation("Addresses");
                 });

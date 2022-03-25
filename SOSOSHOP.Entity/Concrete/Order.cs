@@ -1,8 +1,10 @@
-﻿namespace SOSOShop.Entity.Concrete
+﻿namespace SOSOSHOP.Entity.Concrete
 {
-	using SOSOShop.Entity.Abstract;
+	using SOSOSHOP.Entity.Abstract;
 	using SOSOSHOP.Core.Entity;
-    	public class Order : BaseEntity, IEntity
+	using SOSOSHOP.Entity.Concrete;
+
+	public class Order : BaseEntity, IEntity
     {
         public int customer_id { get; set; }
         public int status_code_id { get; set; }

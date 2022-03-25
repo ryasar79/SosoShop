@@ -1,4 +1,4 @@
-﻿namespace SOSOShop.Entity.Abstract
+﻿namespace SOSOSHOP.Entity.Abstract
 {
     using System.ComponentModel.DataAnnotations;
 

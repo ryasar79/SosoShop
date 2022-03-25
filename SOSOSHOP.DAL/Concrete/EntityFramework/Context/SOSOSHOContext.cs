@@ -1,10 +1,10 @@
 ﻿namespace SOSOSHOP.DAL.Concrete.EntityFramework.Context
 {
     using Microsoft.EntityFrameworkCore;
-    using SOSOShop.Entity.Concrete;
-    public class SOSOShopContext : DbContext
+	using SOSOSHOP.Entity.Concrete;
+    public class SOSOSHOPContext : DbContext
     {
-        public SOSOShopContext(DbContextOptions<SOSOShopContext> options) : base(options) { }
+        public SOSOSHOPContext(DbContextOptions<SOSOSHOPContext> options) : base(options) { }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Address> Orders { get; set; }
